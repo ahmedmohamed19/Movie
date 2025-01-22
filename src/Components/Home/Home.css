@@ -1,0 +1,52 @@
+* {
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.07em;
+}
+
+main {
+    background-color: rgb(25, 32, 38);
+}
+
+.navbar-brand,
+h1 {
+    font-size: 40px;
+
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.52);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0%;
+    opacity: 0;
+}
+
+.navbar-brand,
+h2,
+h1,
+.content p {
+    color: #FFFFFF;
+}
+
+.content p {
+    text-align: center;
+    padding-inline: 10px;
+    font-size: 24px;
+}
+
+.main-image:hover .content,
+.movie-item:hover .content {
+    opacity: 1;
+}
+
+.nav-link,
+p {
+    color: #b6b0b0;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: rgb(245, 191, 55);
+}
