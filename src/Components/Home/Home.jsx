@@ -3,8 +3,6 @@ import Nav from '../Nav/Nav';
 import './Home.css'
 
 function Home({ data }) {
-    console.log(data);
-
     return <>
         <main >
             <div className="container">
