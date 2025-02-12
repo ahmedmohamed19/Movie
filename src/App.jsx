@@ -11,8 +11,11 @@ function App() {
   useEffect(() => {
     (async function getData() {
       try {
-        let { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?language=en-US&api_key=13eb610d3996f496f23cf734ef93bb12`);
+        // let { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?language=en-US&api_key=13eb610d3996f496f23cf734ef93bb12`);
+        let { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=13eb610d3996f496f23cf734ef93bb12&page=${3}&language=en-US`);
         setMoves(data.results);
+        console.log(data.results);
+
       } catch (error) {
         console.error('Error fetching data:', error);
       }

@@ -26,10 +26,10 @@ function Home({ data }) {
                     <div className="row">
                         <div className="col-12"><h2 className='mt-5 mb-3'>New Realease</h2></div>
                     </div>
-                    <div className="row overflow-x-auto flex-nowrap text-center g-3">
+                    <div className="row overflow-x-auto overflow-y-hidden flex-nowrap text-center">
                         {data.map((item, index) => (
                             (index > 0 && <div key={index} className="movie-item col-4 position-relative">
-                                <div className="content position-absolute d-flex justify-content-center align-items-center">
+                                <div className="content position-absolute d-flex justify-content-center align-items-baseline">
                                     <p>{item.overview}</p>
                                 </div>
                                 <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} className='w-100' />
@@ -43,7 +43,7 @@ function Home({ data }) {
                     <div className="row text-center g-3 justify-content-center">
                         {data.map((item, index) => (
                             (index > 0 && <div key={index} className="movie-item col-4 position-relative">
-                                <div className="content position-absolute d-flex justify-content-center align-items-center">
+                                <div className="content position-absolute d-flex justify-content-center ">
                                     <p>{item.overview}</p>
                                 </div>
                                 <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} className='w-100' />
